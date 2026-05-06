@@ -1,6 +1,6 @@
-# CashFlow
+# ExpenseTracker
 
-CashFlow is a personal finance tracker built natively for macOS, CashFlow helps you track your income and expenses with complete privacy. Your financial data never leaves your Mac.
+ExpenseTracker is a personal finance tracker built natively for macOS, ExpenseTracker helps you track your income and expenses with complete privacy. Your financial data never leaves your Mac.
 
 <img width="1210" height="891" alt="Screenshot 2026-05-07 at 1 16 56 AM" src="https://github.com/user-attachments/assets/08322849-e42e-46d1-90f1-e9e16327ab77" />
 
@@ -19,7 +19,7 @@ CashFlow is a personal finance tracker built natively for macOS, CashFlow helps 
 
 ## Local Vault Security
 
-CashFlow acts as a secure local vault. Since financial data is sensitive, you have the option to secure the application without needing to create an online account.
+ExpenseTracker acts as a secure local vault. Since financial data is sensitive, you have the option to secure the application without needing to create an online account.
 
 **Configuration Settings:**
 * **Require Passcode:** Toggle this on to require a master password whenever the app is launched or locked.
@@ -41,5 +41,5 @@ All transaction data, user preferences, and hashed passcodes are stored directly
 
 ## Sandbox Permissions
 
-Because CashFlow is a sandboxed macOS application, it requires your explicit permission to save CSV files to your file system. When you click "Download CSV" for the first time, macOS will securely prompt you to choose exactly where you want the file saved.
+Because ExpenseTracker is a sandboxed macOS application, it requires your explicit permission to save CSV files to your file system. When you click "Download CSV" for the first time, macOS will securely prompt you to choose exactly where you want the file saved.
 
