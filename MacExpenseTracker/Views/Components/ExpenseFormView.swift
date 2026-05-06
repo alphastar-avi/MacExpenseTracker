@@ -56,7 +56,8 @@ struct ExpenseFormView: View {
                 Text(isSubmitting ? "Adding..." : "Add Expense")
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical, 6)
+                    .padding(.vertical, 8)
+                    .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
             .background(customBlue)

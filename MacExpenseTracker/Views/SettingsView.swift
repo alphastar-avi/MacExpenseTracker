@@ -16,11 +16,13 @@ struct SettingsView: View {
         VStack(alignment: .leading, spacing: 0) {
             Button(action: onBack) {
                 Label("Back", systemImage: "arrow.left")
+                    .padding(12)
+                    .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
             .foregroundColor(.secondary)
-            .padding(.top, 24)
-            .padding(.horizontal, 24)
+            .padding(.top, 16)
+            .padding(.horizontal, 16)
             
             ScrollView {
                 VStack(alignment: .leading, spacing: 32) {

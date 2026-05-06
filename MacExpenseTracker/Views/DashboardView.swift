@@ -23,12 +23,13 @@ struct DashboardView: View {
                 let monthName = DateFormatter().monthSymbols[viewModel.selectedMonth - 1]
                 Button(action: { showingDatePicker.toggle() }) {
                     Label("\(monthName) \(viewModel.selectedYear)", systemImage: "calendar")
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 4)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 8)
+                        .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
                 .background(Color.secondary.opacity(0.1))
-                .cornerRadius(6)
+                .cornerRadius(8)
                 .popover(isPresented: $showingDatePicker) {
                     MonthYearPickerView(selectedMonth: $viewModel.selectedMonth, selectedYear: $viewModel.selectedYear) { title, amount in
                         viewModel.addIncome(title: title, amount: amount)
@@ -45,15 +46,18 @@ struct DashboardView: View {
                 Button(action: onSettings) {
                     Image(systemName: "gearshape")
                         .font(.title3)
+                        .padding(8)
+                        .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
                 
                 Button(action: onLogout) {
                     Image(systemName: "rectangle.portrait.and.arrow.right")
                         .font(.title3)
+                        .padding(8)
+                        .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
-                .padding(.leading, 8)
             }
             .padding()
             .background(Color(NSColor.windowBackgroundColor))

@@ -114,11 +114,16 @@ class DashboardViewModel {
     }
     
     private func createTransactionDate() -> Date {
+        let now = Date()
+        let cal = Calendar.current
+        if cal.component(.month, from: now) == selectedMonth && cal.component(.year, from: now) == selectedYear {
+            return now
+        }
         var components = DateComponents()
         components.year = selectedYear
         components.month = selectedMonth
-        components.day = 15
+        components.day = 1
         components.hour = 12
-        return Calendar.current.date(from: components) ?? Date()
+        return cal.date(from: components) ?? Date()
     }
 }

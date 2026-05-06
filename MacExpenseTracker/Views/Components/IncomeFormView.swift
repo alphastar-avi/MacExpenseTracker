@@ -27,10 +27,15 @@ struct IncomeFormView: View {
             
             Button(action: submit) {
                 Text(isSubmitting ? "Adding..." : "Add Income")
+                    .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
+                    .padding(.vertical, 8)
+                    .contentShape(Rectangle())
             }
-            .buttonStyle(.borderedProminent)
-            .disabled(title.isEmpty || amountString.isEmpty || isSubmitting)
+            .buttonStyle(.plain)
+            .background(Color.green)
+            .cornerRadius(6)
+            .disabled(amountString.isEmpty || isSubmitting)
             .padding(.top, 4)
         }
         .padding()
