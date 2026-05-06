@@ -1,7 +1,8 @@
 # CashFlow
 
-CashFlow is a premium, offline-first personal finance tracker built natively for macOS. Designed with a sleek, minimalist interface inspired by Apple's own design principles, CashFlow helps you track your income and expenses with complete privacy. Your financial data never leaves your Mac.
+CashFlow is a personal finance tracker built natively for macOS, CashFlow helps you track your income and expenses with complete privacy. Your financial data never leaves your Mac.
 
+<img width="1210" height="891" alt="Screenshot 2026-05-07 at 1 16 56 AM" src="https://github.com/user-attachments/assets/08322849-e42e-46d1-90f1-e9e16327ab77" />
 
 ---
 
@@ -29,13 +30,12 @@ CashFlow acts as a secure local vault. Since financial data is sensitive, you ha
 ## Requirements
 
 * macOS 14.0 (Sonoma) or later
-* Built exclusively for Apple Silicon and Intel Macs using SwiftUI and SwiftData.
 
 ---
 
 ## Data Privacy & Storage
 
-Unlike web-based trackers, CashFlow uses **zero network requests**. All transaction data, user preferences, and hashed passcodes are stored directly inside your macOS user container using Apple's `SwiftData` framework and the `Keychain`. If you delete the app and its container, your data is permanently destroyed unless you have exported a CSV backup.
+All transaction data, user preferences, and hashed passcodes are stored directly inside your macOS user container using Apple's `SwiftData` framework and the `Keychain`. If you delete the app and its container, your data is permanently destroyed unless you have exported a CSV backup.
 
 ---
 
@@ -43,4 +43,3 @@ Unlike web-based trackers, CashFlow uses **zero network requests**. All transact
 
 Because CashFlow is a sandboxed macOS application, it requires your explicit permission to save CSV files to your file system. When you click "Download CSV" for the first time, macOS will securely prompt you to choose exactly where you want the file saved.
 
-"
