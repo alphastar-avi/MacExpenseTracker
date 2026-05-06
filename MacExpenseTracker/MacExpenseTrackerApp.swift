@@ -1,17 +1,26 @@
-//
-//  MacExpenseTrackerApp.swift
-//  MacExpenseTracker
-//
-//  Created by Avinash S on 5/6/26.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct MacExpenseTrackerApp: App {
+    var sharedModelContainer: ModelContainer = {
+        let schema = Schema([
+            User.self,
+            Transaction.self,
+        ])
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+
+        do {
+            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+        } catch {
+            fatalError("Could not create ModelContainer: \(error)")
+        }
+    }()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(sharedModelContainer)
     }
 }
