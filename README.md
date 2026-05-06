@@ -2,10 +2,6 @@
 
 CashFlow is a premium, offline-first personal finance tracker built natively for macOS. Designed with a sleek, minimalist interface inspired by Apple's own design principles, CashFlow helps you track your income and expenses with complete privacy. Your financial data never leaves your Mac.
 
-<p align="center">
-  <!-- Add your screenshot link here -->
-  <img width="800" alt="CashFlow UI" src="MacExpenseTracker/Assets.xcassets/AppIcon.appiconset/512.png" />
-</p>
 
 ---
 
